@@ -1,0 +1,49 @@
+{
+  "name": "runapi-ai/ideogram-v3",
+  "description": "RunAPI Ideogram V3 Composer package for PHP applications",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "RunAPI",
+      "email": "contact@runapi.ai"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "runapi-ai/core": "^0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "RunApi\\IdeogramV3\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RunApi\\IdeogramV3\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "0.1.x-dev"
+    }
+  },
+  "minimum-stability": "stable",
+  "homepage": "https://runapi.ai/models/ideogram-v3",
+  "support": {
+    "source": "https://github.com/runapi-ai/ideogram-v3-php",
+    "docs": "https://runapi.ai/docs#sdk-ideogram-v3",
+    "issues": "https://github.com/runapi-ai/ideogram-v3-php/issues"
+  },
+  "keywords": [
+    "runapi",
+    "runapi-ai",
+    "php",
+    "composer",
+    "sdk",
+    "api",
+    "packagist",
+    "ideogram-v3",
+    "ideogram-v3-api"
+  ]
+}
