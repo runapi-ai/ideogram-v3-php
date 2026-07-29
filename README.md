@@ -46,8 +46,8 @@ All SDK exceptions inherit from `RunApi\Core\Errors\RunApiException`, including 
 ## Links
 
 - Model page: https://runapi.ai/models/ideogram-v3
-- SDK docs: https://runapi.ai/docs#sdk-ideogram-v3
-- Product docs: https://runapi.ai/docs#ideogram-v3
+- SDK docs: https://runapi.ai/docs/resources/sdks
+- Product docs: https://runapi.ai/docs/api/ideogram-v3/text-to-image
 - Pricing and rate limits: https://runapi.ai/models/ideogram-v3/text-to-image
 - Full catalog: https://runapi.ai/models
 - GitHub repository: https://github.com/runapi-ai/ideogram-v3-php
