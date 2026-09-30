@@ -10,7 +10,6 @@ use RunApi\Core\RequestOptions;
 use RunApi\Core\Resources\TypedConfiguredResource;
 use RunApi\IdeogramV3\Models\CompletedImageTaskResponse;
 use RunApi\IdeogramV3\Models\ImageTaskResponse;
-use RunApi\IdeogramV3\Types;
 
 /**
  * Inpaints a source image using a mask.
@@ -79,10 +78,8 @@ readonly class EditImage extends TypedConfiguredResource
         return new self(
             $http,
             '/api/v1/ideogram_v3/edit_image',
-            'ideogram-v3/edit-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,
-            Types::EDIT_IMAGE_MODELS,
             'edit-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,

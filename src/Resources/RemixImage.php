@@ -10,7 +10,6 @@ use RunApi\Core\RequestOptions;
 use RunApi\Core\Resources\TypedConfiguredResource;
 use RunApi\IdeogramV3\Models\CompletedImageTaskResponse;
 use RunApi\IdeogramV3\Models\ImageTaskResponse;
-use RunApi\IdeogramV3\Types;
 
 /**
  * Creates a variation of a source image guided by a new prompt.
@@ -81,10 +80,8 @@ readonly class RemixImage extends TypedConfiguredResource
         return new self(
             $http,
             '/api/v1/ideogram_v3/remix_image',
-            'ideogram-v3/remix-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,
-            Types::REMIX_IMAGE_MODELS,
             'remix-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,

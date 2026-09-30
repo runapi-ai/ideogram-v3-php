@@ -10,7 +10,6 @@ use RunApi\Core\RequestOptions;
 use RunApi\Core\Resources\TypedConfiguredResource;
 use RunApi\IdeogramV3\Models\CompletedImageTaskResponse;
 use RunApi\IdeogramV3\Models\ImageTaskResponse;
-use RunApi\IdeogramV3\Types;
 
 /**
  * Generates images from text prompts.
@@ -77,10 +76,8 @@ readonly class TextToImage extends TypedConfiguredResource
         return new self(
             $http,
             '/api/v1/ideogram_v3/text_to_image',
-            'ideogram-v3/text-to-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,
-            Types::TEXT_TO_IMAGE_MODELS,
             'text-to-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,

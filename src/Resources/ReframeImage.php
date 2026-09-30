@@ -10,7 +10,6 @@ use RunApi\Core\RequestOptions;
 use RunApi\Core\Resources\TypedConfiguredResource;
 use RunApi\IdeogramV3\Models\CompletedImageTaskResponse;
 use RunApi\IdeogramV3\Models\ImageTaskResponse;
-use RunApi\IdeogramV3\Types;
 
 /**
  * Reframes an input image into a new aspect ratio or size.
@@ -77,10 +76,8 @@ readonly class ReframeImage extends TypedConfiguredResource
         return new self(
             $http,
             '/api/v1/ideogram_v3/reframe_image',
-            'ideogram-v3/reframe-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,
-            Types::REFRAME_IMAGE_MODELS,
             'reframe-image',
             ImageTaskResponse::class,
             CompletedImageTaskResponse::class,
